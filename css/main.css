@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fbb03b;
+  color: #138073;
+  height: 100vh;
+  text-align: center;
+}
+
+a {
+  color: #138073;
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.wrapper {
+  height: 100%;
+  padding: 120px 80px;
+}
+.wrapper .form-control {
+  border: 1px solid #138073;
+  min-height: 100px;
+  padding: 0 60px;
+}
+.wrapper .form-control::placeholder {
+  color: #138073;
+  font-size: large;
+}
+.wrapper .btn {
+  background-color: #39b69f;
+  color: white;
+  border-color: white;
+}
