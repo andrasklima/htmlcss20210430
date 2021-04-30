@@ -23,9 +23,16 @@ h1 {
   font-family: "Times New Roman", Times, serif;
 }
 
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
 .wrapper {
-  height: 100%;
-  padding: 120px 80px;
+  line-height: 5em;
 }
 .wrapper .form-control {
   border: 1px solid #138073;
@@ -33,11 +40,31 @@ h1 {
   padding: 0 60px;
 }
 .wrapper .form-control::placeholder {
-  color: #138073;
+  color: #71b3ab;
   font-size: large;
 }
 .wrapper .btn {
   background-color: #39b69f;
   color: white;
   border-color: white;
+  padding: 40px;
+  min-width: 50%;
+}
+.wrapper #agree {
+  margin-top: 2em;
+}
+.wrapper .form-check-label {
+  text-align: left;
+  line-height: initial;
+}
+
+@media only screen and (max-width: 600px) {
+  .center {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    text-align: right;
+  }
 }
